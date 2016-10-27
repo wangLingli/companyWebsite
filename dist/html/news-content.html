@@ -163,6 +163,7 @@
 
     <div class="section news-section">
       <div class="container">
+        <!--news-section left start-->
         <div class="am-u-md-9">
           <div class="article">
             <header class="article--header">
@@ -240,45 +241,51 @@
 									</div>
 								</li>
 							</ul>
-							<div class="comment_form form">
+							<div class="comment_form">
 								<h2 class="comment_form--title">Leave Comment</h2>
-								<div class="form--row">
-									<div class="form--row_inner">
-										<div class="form--col">
-											<label class="field -wide">
-												<input type="text" placeholder="Full Name">
-											</label>
-										</div>
-										<div class="form--col">
-											<label class="field -wide">
-												<input type="text" placeholder="Email">
-											</label>
-										</div>
-										<div class="form--col">
-											<label class="field -wide">
-												<input type="text" placeholder="Website URL">
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="form--row">
-									<div class="form--row_inner">
-										<div class="form--col">
-											<label class="field -wide">
-												<textarea name="comment" cols="30" rows="10" placeholder="Type in here..."></textarea>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="comment_form--footer form--footer">
-									<div class="form--footer_buttons">
-										<button class="button -picton_blue -bordered"><span class="button--inner">Publish Comment</span></button>
-									</div>
-								</div>
+                <form class="am-form am-form-horizontal">
+                  <div class="am-form-group">
+                    <div class="am-g">
+                      <div class="am-u-md-4">
+                        <input type="text"   placeholder="Full Name">
+                      </div>
+                      <div class="am-u-md-4">
+                        <input type="Email"  placeholder="Email" >
+                      </div>
+                      <div class="am-u-md-4">
+                        <input type="url" placeholder="Website URL">
+                      </div>
+                    </div>
+                    <div class="am-g">
+                      <textarea name="comment" cols="30" rows="10" placeholder="Type in here..."></textarea>
+                    </div>
+                    <div class="comment-form-footer">
+                      <button type="button" class="am-btn am-btn-secondary">确认提交</button>
+                    </div>
+                  </div>
+                </form>
+
 							</div>
 						</div>
           </div>
         </div>
+        <!--news-section left end-->
+
+        <!--news-section right start-->
+        <div class="am-u-md-3">
+          <div class="blog_sidebar">
+            <div class="widget">
+              <h2 class="widget--title"><i class="icons8-layers"></i>Archive</h2>
+              <ul>
+								<li><a href="#">October 2014</a></li>
+								<li><a href="#">September 2014</a></li>
+								<li><a href="#">August 2014</a></li>
+								<li><a href="#">July 2014</a></li>
+							</ul>
+            </div>
+          </div>
+        </div>
+        <!--news-section right end-->
       </div>
     </div>
   </div>
