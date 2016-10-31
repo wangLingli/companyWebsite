@@ -86,6 +86,35 @@
   }
 }
 
+/***** 移动端导航 *****/
+@media screen and (max-width: 640px){
+  .m-header{
+    background: #fFF;
+  }
+  .m-header .am-menu-offcanvas1 .am-menu-nav > .am-open > a, .m-header .am-menu-offcanvas1 .am-menu-nav > li > a:hover, .am-menu-offcanvas1 .am-menu-nav > li > a:focus {
+    background-color: #383d61 !important;
+    color: #fff;
+    outline: none;
+  }
+  .m-header .am-menu-offcanvas1 .am-menu-sub{
+    background-color: #383d61 !important;
+  }
+  .m-header .am-menu-sub{
+    padding: 0px;
+  }
+  .m-header .am-menu-sub li{
+    border-top: 1px solid rgba(255,255,255,0.1);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    padding-left: 36px;
+  }
+  .m-header .am-menu-sub li a{
+    color: rgba(255,255,255,0.3);
+    text-shadow:none !important;
+  }
+}
+
 
 
 
