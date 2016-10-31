@@ -47,6 +47,14 @@
           opacity: 0.3;
           margin: 0 5px;
         }
+        a{
+          &:nth-of-type(1){
+            margin-left:20px;
+          }
+          color: #fff;
+          font-size: 14px;
+          margin: 4px;
+        }
       }
     }
   }
@@ -158,6 +166,36 @@
     .am-nav{
       li{
         padding: 25px 10px;
+        list-style: none;
+        position: relative;
+        &:hover{
+          .sub-menu{
+            display: block;
+          }
+        }
+        .sub-menu{
+          display: none;
+          padding-left: 0px;
+          position: absolute;
+          top: 100%;
+          box-shadow: 0 0 7px rgba(0,0,0,0.15);
+          top: 100%;
+          left: 6px;
+          z-index: 100;
+          background: #fff;
+          border-radius: 0 0 3px 3px;
+          margin: 0;
+          .menu-item{
+            min-width: 160px;
+            border-top: 1px solid #eaeaea;
+            position: relative;
+            padding: 15px 10px;
+            a{
+              display: block;
+              padding:  0px 20px;
+            }
+          }
+        }
         a{
           color: #333;
           padding: 0px;
@@ -374,6 +412,7 @@
     position: relative;
     text-align: center;
     padding: 138px 0 48px;
+    margin: 30px;
 
   .contact_card--icon {
     position: absolute;
