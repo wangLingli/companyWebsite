@@ -39,9 +39,23 @@ gulp.task('html',function(){
     .pipe(gulp.dest(dest.html));
 });
 
+gulp.task('js',function(){
+  return gulp.src(dist.js)
+    .pipe(gulp.dest(dest.js));
+});
+
+gulp.task('index',function(){
+  return gulp.src(dist.index)
+    .pipe(gulp.dest(dest.index));
+});
+
+gulp.task('images',function(){
+  return gulp.src(dist.images)
+    .pipe(gulp.dest(dest.images));
+});
 
 gulp.task('watch',function(){
-  gulp.watch(dist.less,['css']);
+  gulp.watch([dist.less, dist.html, dist.js, dist.index, dist.images],['css', 'html', 'js', 'index', 'images']);
 });
 
 gulp.task('default',function(){
